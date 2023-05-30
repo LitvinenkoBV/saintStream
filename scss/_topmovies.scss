@@ -1,0 +1,63 @@
+.movies {
+  margin-top: 100px;
+  .container {
+    position: relative;
+  }
+  &__heading {
+    @include text(700, 24px, 32px, 0.005em, #f9f9f9, "");
+  }
+  &__wrp {
+    margin: 24px 0 0 0;
+    overflow: hidden;
+  }
+  &__wrapper {
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 3s;
+  }
+  &__item {
+    display: block;
+    position: relative;
+    padding-right: 15px;
+  }
+  &__item {
+    display: block;
+    position: relative;
+    padding-right: 15px;
+  }
+  &__item img {
+    max-width: 270px;
+    border-radius: 12px;
+    filter: brightness(80%);
+  }
+  &__item:hover img {
+    filter: brightness(100%);
+  }
+  &__button-prev {
+    @include btn(pointer, absolute, 4%, "", 50%, 5, 32px, 32px);
+  }
+  &__button-next {
+    @include btn(pointer, absolute, "", 5%, 50%, 5, 32px, 32px);
+  }
+  &__title {
+    @include text(700, 24px, 32px, 0.005em, #f9f9f9, "");
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    bottom: 44px;
+    transform: translate(-50%, 0);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0),
+      0 0 0.2em rgb(0, 0, 0);
+  }
+  &__imDbRating {
+    @include text(600, 14px, 20px, 0.005em, #f9f9f9, "");
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, 0);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0),
+      0 0 0.2em rgb(0, 0, 0);
+  }
+}

@@ -1,0 +1,97 @@
+.moremovies {
+  margin-top: 100px;
+  position: relative;
+  &__oscar-winners {
+    height: 680px;
+  }
+  &__btn-prev-nominated,
+  &__btn-prev-picture {
+    position: absolute;
+    top: 0px;
+    left: unset !important;
+    right: 40px;
+    bottom: unset !important;
+  }
+  &__btn-next-nominated,
+  &__btn-next-picture {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    bottom: unset;
+  }
+  &__btn-prev-winners {
+    position: absolute;
+    top: 0px;
+    right: 40px;
+    left: unset;
+    bottom: unset;
+  }
+  &__btn-next-winners {
+    position: absolute;
+    top: 00px;
+    right: 0;
+    bottom: unset;
+  }
+  &__title {
+    @include text(700, 24px, 32px, 0.005em, #f9f9f9, "");
+    max-width: 180px;
+    padding: 0 0 20px 0;
+  }
+  &__carousel-item-winners {
+    img {
+      border-radius: 20px;
+      max-width: 50% !important;
+    }
+    max-height: 700px;
+    &__heading {
+      @include text(700, 24px, 32px, 0.005em, #f9f9f9, left);
+      padding: 50px 0 0 0;
+    }
+    &__text {
+      @include text(400, 14px, 20px, 0.005em, #ffffff, left);
+      padding: 20px 0 0 0;
+    }
+  }
+  &__carousel-block {
+    display: flex;
+  }
+  &__carousel-title {
+    @include text(700, 16px, 16px, 0.005em, #f9f9f9, "");
+  }
+  &__carousel-text {
+    @include text(400, 11px, 16px, 0.005em, #b7b7b7, left);
+  }
+  &__img-nominated img,
+  &__img-picture img {
+    width: unset !important;
+    max-width: 110px;
+    border-radius: 20px;
+    margin: 0 0 20px 0;
+  }
+  &__content-nominated,
+  &__content-picture {
+    padding: 30px 0 0 10px;
+  }
+  &__img-nominated img,
+  &__img-picture img,
+  &__carousel-item-winners img {
+    filter: brightness(80%);
+  }
+  &__carousel-block:hover img,
+  // &__img-picture:hover img,
+  &__carousel-item-winners:hover img {
+    filter: brightness(100%);
+  }
+  &__carousel-imDbRating {
+    @include text(400, 16px, "", "", #fff, "");
+  }
+  &__carousel-genres {
+    @include text(400, 14px, "", "", #b7b7b7, "");
+  }
+  // &__picture-wrapper,
+  // &__nominated-wrapper,
+  // &__oscar-nominated,
+  // &__picture-winners {
+  //   overflow: visible;
+  // }
+}

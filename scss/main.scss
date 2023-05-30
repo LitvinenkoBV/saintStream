@@ -1,0 +1,23 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: black;
+}
+body._lock {
+  overflow: hidden;
+}
+.menu__icon {
+  display: none;
+}
+@import "./reset";
+@import "./mixins";
+@import "./header";
+@import "./slideshow";
+@import "./company";
+@import "./comingsoon";
+@import "./footer";
+@import "./genres";
+@import "./topmovies";
+@import "./moremovies";
+@import "./media-992";
+@import "./media-767";
+@import "./media-576";

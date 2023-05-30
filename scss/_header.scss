@@ -1,0 +1,33 @@
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  &__navigation {
+    height: 110px;
+  }
+  &__navigation-logo {
+    width: 154px;
+    height: 32px;
+  }
+
+  &__list {
+    max-width: 445px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__list-item a {
+    @include text(inherit, 16px, 19px, "", #fff, "");
+  }
+  &__list-item:hover {
+    transform: scale(1.2);
+    transition: all ease 0.5s;
+  }
+  &__list-item.active a {
+    font-weight: 800;
+  }
+  &__buttons .btn-outline-light {
+    margin: 0 10px 0 10px;
+  }
+}

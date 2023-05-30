@@ -1,0 +1,37 @@
+.slideshow {
+  padding: 0;
+  position: relative;
+  top: -110px;
+  left: 0;
+  &__wrapper img {
+    max-height: 630px;
+    filter: brightness(70%);
+    min-height: 300px;
+    object-fit: cover;
+  }
+
+  &__dot {
+    cursor: pointer;
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+  }
+  &__wrapper-title {
+    @include text(700, 32px, 40px, 0.005em, #fff, left);
+  }
+  &__wrapper-text {
+    @include text(400, 14px, 20px, 0.005em, #fff, left);
+  }
+  &__wrapper-caption {
+    max-width: 606px;
+    left: 0;
+    right: 0;
+    padding: 0 0 0 10%;
+  }
+  &__wrapper-about {
+    @include text(400, 14px, 22px, 0.005em, #787a7c, left);
+  }
+  &__wrapper-about {
+    text-align: left;
+  }
+}

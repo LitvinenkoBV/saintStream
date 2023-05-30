@@ -1,0 +1,11 @@
+.company {
+  position: relative;
+  top: -55px;
+  &__logo {
+    padding-bottom: 20px;
+  }
+  &__logo:hover {
+    transform: scale(1.2);
+    transition: all ease 0.5s;
+  }
+}

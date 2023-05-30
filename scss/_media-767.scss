@@ -1,0 +1,142 @@
+@media (max-width: 767px) {
+  .btn {
+    font-size: 12px;
+  }
+  .header {
+    top: -20px;
+
+    &__navigation-logo {
+      order: 1;
+      z-index: 5;
+    }
+    &__buttons {
+      justify-content: end !important;
+    }
+    &__navigation-wrapper {
+      display: flex;
+      justify-content: end;
+    }
+    &__buttons {
+      order: 2;
+    }
+    &__navigation-wrapper {
+      order: 3;
+    }
+    &__list {
+      max-width: 100%;
+      display: block !important;
+      text-align: center;
+    }
+    &__list-item {
+      padding: 15px;
+      font-size: 20px;
+    }
+  }
+  .company {
+    &__logo img {
+      width: 120px;
+    }
+  }
+  .slideshow {
+    &__wrapper-about,
+    &__wrapper-text {
+      display: none;
+    }
+    &__wrapper-title {
+      font-size: 26px;
+    }
+    &__wrapper-buttons {
+      max-width: 350px;
+    }
+  }
+  .menu__icon {
+    z-index: 15;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+  }
+  .menu__icon span,
+  .menu__icon:before,
+  .menu__icon:after {
+    left: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    background-color: #fff;
+  }
+  .menu__icon::before,
+  .menu__icon::after {
+    content: "";
+  }
+  .menu__icon::before {
+    top: 0;
+  }
+  .menu__icon:after {
+    bottom: 0;
+  }
+  .menu__icon span {
+    top: 50%;
+    transform: scale(1) translate(0px, -50%);
+  }
+  .menu__body {
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.9);
+    padding: 100px 30px 30px 30px;
+    transition: left 0.3s ease 0s;
+  }
+  .menu__body._active {
+    left: 0;
+  }
+  .menu__body:before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 70px;
+    z-index: 2;
+  }
+  .menu__icon._active span {
+    transform: scale(0) translate(0px, -50%);
+  }
+  .menu__icon._active:before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0px, -50%);
+  }
+  .menu__icon._active:after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0px, 50%);
+  }
+  .carousel-indicators {
+    z-index: 1;
+  }
+  .footer {
+    &__more {
+      padding-bottom: 20px;
+    }
+  }
+  .genres {
+    .carousel-indicators img {
+      max-width: 120px;
+    }
+  }
+  .moremovies {
+    &__carousel-item-winners {
+      margin-bottom: 100px;
+    }
+    &__carousel-title {
+      font-size: 14px;
+    }
+    &__carousel-title {
+      font-size: 12px;
+    }
+  }
+}
